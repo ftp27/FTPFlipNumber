@@ -1,0 +1,16 @@
+PODS:
+  - FTPFlipNumber (0.1.0)
+
+DEPENDENCIES:
+  - FTPFlipNumber (from `../`)
+
+EXTERNAL SOURCES:
+  FTPFlipNumber:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FTPFlipNumber: c6905266a8233a2de7347f6485355ac42000bfb4
+
+PODFILE CHECKSUM: 16fa0fdccc92f2c51cc4c40d15ee52f3d283a0ce
+
+COCOAPODS: 1.1.1

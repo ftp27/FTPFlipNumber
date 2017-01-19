@@ -1,0 +1,6 @@
+framework module FTPFlipNumber {
+  umbrella header "FTPFlipNumber-umbrella.h"
+
+  export *
+  module * { export * }
+}

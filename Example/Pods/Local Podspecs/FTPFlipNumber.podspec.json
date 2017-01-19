@@ -1,0 +1,22 @@
+{
+  "name": "FTPFlipNumber",
+  "version": "0.1.0",
+  "summary": "A short description of FTPFlipNumber.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/FTPFlipNumber",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "A. Cherepanov": "ftp27host@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/FTPFlipNumber.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FTPFlipNumber/Classes/**/*"
+}
