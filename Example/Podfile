@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FTPFlipNumber_Example' do
+  pod 'FTPFlipNumber', :path => '../'
+
+  target 'FTPFlipNumber_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
