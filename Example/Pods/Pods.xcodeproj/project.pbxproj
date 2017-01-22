@@ -13,7 +13,8 @@
 		5EC189B5FDAF841ED1C7E9F71CCD035B /* FTPFlipNumber-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C95C12331F6FAFFCC9F9B3DAD8C370 /* FTPFlipNumber-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		691481AB70194CC0DE20FDC279897E31 /* Pods-FTPFlipNumber_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3318A6BA0215762D3332991B242B5C73 /* Pods-FTPFlipNumber_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E9F24BD44FD3F3775841FC64FA9C050 /* Pods-FTPFlipNumber_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E472BD1370758B4A9DCAA0668ABACACB /* Pods-FTPFlipNumber_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A633FCB9165FC6146E33CB544C626A9 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4650B11052793DD9CD36A7F9967E6 /* ReplaceMe.swift */; };
+		94D50C9F1E3137F5007D20E5 /* FTPFlipNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D50C9E1E3137F5007D20E5 /* FTPFlipNumber.swift */; };
+		94EAB6521E34B09500F46557 /* FTPImageCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EAB6511E34B09500F46557 /* FTPImageCreator.swift */; };
 		A4736061C7DC5522FF8CE4063B19DE86 /* FTPFlipNumber-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E85A069F4206AC57793EE687EB9C76A /* FTPFlipNumber-dummy.m */; };
 		BDCE1B0F87B2FD8EC13409D88D5589E5 /* Pods-FTPFlipNumber_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC32387C781D820DF5ABA0FDA047555 /* Pods-FTPFlipNumber_Tests-dummy.m */; };
 		EC676CB5C85D475AFDA1138DA00CC8B1 /* Pods-FTPFlipNumber_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0036FD66C3FCED227581E4CA13E642BB /* Pods-FTPFlipNumber_Example-dummy.m */; };
@@ -47,6 +48,8 @@
 		8AA79FDA0DC27C20AE9D8B21DC26440A /* Pods-FTPFlipNumber_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTPFlipNumber_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8E85A069F4206AC57793EE687EB9C76A /* FTPFlipNumber-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FTPFlipNumber-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94D50C9E1E3137F5007D20E5 /* FTPFlipNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPFlipNumber.swift; sourceTree = "<group>"; };
+		94EAB6511E34B09500F46557 /* FTPImageCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTPImageCreator.swift; sourceTree = "<group>"; };
 		965F56BDC2D64BE57938BD630553A8B0 /* FTPFlipNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTPFlipNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C95C12331F6FAFFCC9F9B3DAD8C370 /* FTPFlipNumber-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FTPFlipNumber-umbrella.h"; sourceTree = "<group>"; };
 		AE7363B1F16F2E5D6475D00F615DC224 /* Pods-FTPFlipNumber_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTPFlipNumber_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		E472BD1370758B4A9DCAA0668ABACACB /* Pods-FTPFlipNumber_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FTPFlipNumber_Example-umbrella.h"; sourceTree = "<group>"; };
 		E92E068E21DC806C6E48550489F7483B /* Pods-FTPFlipNumber_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTPFlipNumber_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EAB9BB15C2CAD2DAD564914EE4BC8751 /* Pods-FTPFlipNumber_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FTPFlipNumber_Example.modulemap"; sourceTree = "<group>"; };
-		EBC4650B11052793DD9CD36A7F9967E6 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,8 @@
 		2EA55B5F415B7EDD52DAAFAADB032E1F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EBC4650B11052793DD9CD36A7F9967E6 /* ReplaceMe.swift */,
+				94D50C9E1E3137F5007D20E5 /* FTPFlipNumber.swift */,
+				94EAB6511E34B09500F46557 /* FTPImageCreator.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -349,7 +352,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4736061C7DC5522FF8CE4063B19DE86 /* FTPFlipNumber-dummy.m in Sources */,
-				9A633FCB9165FC6146E33CB544C626A9 /* ReplaceMe.swift in Sources */,
+				94EAB6521E34B09500F46557 /* FTPImageCreator.swift in Sources */,
+				94D50C9F1E3137F5007D20E5 /* FTPFlipNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
