@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdL-w2-2oJ" customClass="FTPFlipNumber" customModule="FTPFlipNumber">
-                                <rect key="frame" x="88" y="184" width="216" height="312"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdL-w2-2oJ" customClass="FTPFlipNumber" customModule="FTPFlipNumber">
+                                <rect key="frame" x="87.5" y="183.5" width="200" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="4zA-BG-sPC"/>
