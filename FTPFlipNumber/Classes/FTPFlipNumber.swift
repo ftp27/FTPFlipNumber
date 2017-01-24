@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable
 class FTPFlipNumber: UIView {
     
+    let kTopAnimaton    = "animationTop"
+    let kBottomAnimaton = "animationBottom"
     
     let animDuration: TimeInterval = 1
     
@@ -119,18 +121,21 @@ class FTPFlipNumber: UIView {
             self.bufferContents = bottomImage?.cgImage
         }
         
+        firstTopLayer.removeAnimation(forKey: kTopAnimaton)
+        
         let topAnim = CABasicAnimation(keyPath: "transform")
         topAnim.duration = animDuration/2
-        topAnim.repeatCount = 1
+        topAnim.repeatCount = 0
         topAnim.fromValue = NSValue.init(caTransform3D:
             CATransform3DMakeRotation(0, 1, 0, 0))
         topAnim.toValue = NSValue.init(caTransform3D:
             CATransform3DMakeRotation((CGFloat)(-M_PI_2), 1, 0, 0))
-        topAnim.isRemovedOnCompletion = true
+        topAnim.fillMode = kCAFillModeForwards
+        topAnim.isRemovedOnCompletion = false
+        
         topAnim.delegate = self
         topAnim.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseOut)
-        firstTopLayer.add(topAnim, forKey: "top")
-        
+        firstTopLayer.add(topAnim, forKey: kTopAnimaton)
     }
 
     /*
@@ -150,7 +155,6 @@ extension FTPFlipNumber: CAAnimationDelegate {
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         if flag {
-            firstTopLayer.contents = secondTopLayer.contents
             let bottomAnim = CABasicAnimation(keyPath: "transform")
             bottomAnim.duration = animDuration/2
             bottomAnim.repeatCount = 1
@@ -159,10 +163,10 @@ extension FTPFlipNumber: CAAnimationDelegate {
             bottomAnim.toValue = NSValue.init(caTransform3D:
                 CATransform3DMakeRotation(0, 1, 0, 0))
             bottomAnim.isRemovedOnCompletion = true
-           // bottomAnim.delegate = self
             bottomAnim.timingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionEaseIn)
-            firstBottomLayer.add(bottomAnim, forKey: "bottom")
+            firstBottomLayer.add(bottomAnim, forKey: kBottomAnimaton)
             firstBottomLayer.contents = self.bufferContents
+            firstTopLayer.contents = secondTopLayer.contents
         }
     }
 }
