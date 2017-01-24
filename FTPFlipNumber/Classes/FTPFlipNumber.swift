@@ -114,7 +114,7 @@ class FTPFlipNumber: UIView {
     func onTouch() {
         
         displaedNumber += 1
-        FTPImageCreator.images(String(displaedNumber+1),
+        FTPImageCreator.images(String(displaedNumber),
         targetSize: layer.bounds.size) { (topImage:UIImage?, bottomImage:UIImage?) in
             self.secondTopLayer.contents = topImage?.cgImage
             self.secondBottomLayer.contents = self.firstBottomLayer.contents
